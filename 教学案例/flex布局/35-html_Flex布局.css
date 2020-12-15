@@ -1,0 +1,99 @@
+.bored_init {
+    border: solid 1px black;
+    margin-bottom: 25px;
+    /*  width: 400px; */
+    height: 400px;
+}
+
+.item {
+    border: solid 1px black;
+    background-color: chartreuse;
+    font-size: medium;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.item1 {
+    border: solid 1px black;
+    background-color: chartreuse;
+    font-size: medium;
+    text-align: center;
+    /* width: 150px;
+    height: 50px;
+    line-height: 50px; */
+}
+
+.item2 {
+    border: solid 1px black;
+    background-color: chartreuse;
+    font-size: medium;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.item_init {
+    margin: 25px;
+}
+
+
+/* .flexbox2:nth-of-type(2) {
+    margin-bottom: 0;
+} */
+
+.flexbox1 {
+    display: flex;
+    /*  设置兼容性 display: -webkit-flex; */
+    /* Safari */
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*nowrap,wrap-reverse,  */
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox4 {
+    display: flex;
+    /* flex-flow=flex-direction + flex-wrap; */
+    flex-flow: row warp;
+}
+
+.flexbox5 {
+    display: flex;
+    justify-content: center;
+    /* flex-start |flex-end |space-between 贴合两边 |space-around 平均分布隔开两边*/
+}
+
+.flexbox6 {
+    display: flex;
+    align-items: baseline;
+    /*  flex-start|flex-end | stretch |center*/
+}
+
+.flexbox7 {
+    display: flex;
+}
+
+
+/* 
+justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。
+ align-items 指定网格垂直呈现，是垂直拉伸还是上中下对齐，属性定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。
+ justify-items 指定网格水平呈现，是水平拉伸还是左中右对齐
+ align-content：会设置自由盒内部各个项目在垂直方向排列方式。 https://www.jianshu.com/p/60110da93a34
+  */

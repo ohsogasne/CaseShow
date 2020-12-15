@@ -1,0 +1,119 @@
+.table_init {
+    margin: 10px 150px;
+}
+
+.TextBottom_init {
+    margin-bottom: 10px;
+}
+
+.border_init {
+    border: 1px solid black;
+}
+
+.text1 {
+    /* 行内元素用 text-align: center */
+    text-align: center;
+    border: 1px solid black;
+}
+
+.text2 {
+    height: 50px;
+    border: 1px solid black;
+}
+
+.t2 {
+    /* 单个块级元素用margin */
+    width: 80px;
+    height: 40px;
+    margin: 4px auto;
+    border: 1px solid black;
+}
+
+.text3 {
+    /* 多个块级元素 将块级转化为行内块 用文本行居中于行高等于块高 */
+    text-align: center;
+    line-height: 60px;
+}
+
+.t3 p {
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.box1 {
+    /* flex布局用   justify-content: center; */
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+}
+
+.box1 p {
+    padding: 30px;
+    margin: 5px;
+}
+
+
+/* 已知高度宽度元素的水平垂直居中 */
+
+.box2 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.t5 {
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -60px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.box3 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.t6 {
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    line-height: 100px;
+}
+
+.box4 {
+    width: 400px;
+    height: 300px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.box5 {
+    position: relative;
+}
+
+.box5 span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

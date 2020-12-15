@@ -1,0 +1,38 @@
+.boxinit div:nth-child(n) {
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+    border: solid 1px blue;
+}
+
+.box1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.box2 p {
+    position: relative;
+    line-height: 20px;
+    max-height: 80px;
+    overflow: hidden;
+}
+
+.box2 p::after {
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 40px;
+    background: -webkit-linear-gradient(left, transparent, #fff 55%);
+    background: -o-linear-gradient(right, transparent, #fff 55%);
+    background: -moz-linear-gradient(right, transparent, #fff 55%);
+    background: linear-gradient(to right, transparent, #fff 55%);
+}
+
+.box3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}

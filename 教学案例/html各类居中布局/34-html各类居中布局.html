@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="34-html各类居中布局.css">
+</head>
+
+<body>
+    <div class="text0">
+        <div class="t0">
+            <div class="inline">
+                <h3>行内元素——display：inline</h3>
+                <p>1.不会自动换行，无法设定宽度与高度（可设定line-height指定高度，宽度随内容变化），margin水平有效垂直无效，padding水平有效垂直有特殊效果[不是边距效果]，具体表现是影响视觉不影响位置</p>
+                <p>2.常见的行内元素包括：</p>
+                <table border="1" width="400" height="300" cellspacing="0" class="table_init">
+                    <tr>
+                        <th>元素名称</th>
+                        <th>说明</th>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>锚点</td>
+                    </tr>
+                    <tr>
+                        <td>b</td>
+                        <td>粗体(不推荐)</td>
+                    </tr>
+                    <tr>
+                        <td>span</td>
+                        <td>常用内联容器，定义文本内区块</td>
+                    </tr>
+                    <tr>
+                        <td>img</td>
+                        <td>图片</td>
+                    </tr>
+                    <tr>
+                        <td>input</td>
+                        <td>(输入框)</td>
+                    </tr>
+                    <tr>
+                        <td>select</td>
+                        <td>项目选择</td>
+                    </tr>
+                    <tr>
+                        <td>strong</td>
+                        <td>粗体强调</td>
+                    </tr>
+                    <tr>
+                        <td>label</td>
+                        <td>表格标签</td>
+                    </tr>
+                    <tr>
+                        <td>cite</td>
+                        <td>引用</td>
+                    </tr>
+                    <tr>
+                        <td>textarea</td>
+                        <td>多行文本输入框</td>
+                    </tr>
+                    <tr>
+                        <td>em</td>
+                        <td>强调</td>
+                    </tr>
+                    <tr>
+                        <td>br</td>
+                        <td>换行</td>
+                    </tr>
+                    <tr>
+                        <td>sup\sub\u\tt\strike\q\em\</td>
+                        <td>比较少用需要再自己去查</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="block">
+                <h3>块级元素——display：block</h3>
+                <p>1.默认特点： 独占一行，使用多个块级标签时自动换行。 |可以设置width,height，margin,padding等属性 |宽度默认值为 100%</p>
+                <p>2.常见的块级元素包括：</p>
+                <table border="1" width="400" height="300" cellspacing="0" class="table_init">
+                    <tr>
+                        <th>元素名称</th>
+                        <th>说明</th>
+                    </tr>
+                    <tr>
+                        <td>div</td>
+                        <td>常用</td>
+                    </tr>
+                    <tr>
+                        <td>h*</td>
+                        <td>各类标题</td>
+                    </tr>
+                    <tr>
+                        <td>ol</td>
+                        <td>有序表单</td>
+                    </tr>
+                    <tr>
+                        <td>dl</td>
+                        <td>定义列表</td>
+                    </tr>
+                    <tr>
+                        <td>ul</td>
+                        <td>无序表格</td>
+                    </tr>
+                    <tr>
+                        <td>form</td>
+                        <td>form交互表单</td>
+                    </tr>
+                    <tr>
+                        <td>hr</td>
+                        <td>分隔线</td>
+                    </tr>
+                    <tr>
+                        <td>p</td>
+                        <td>段落</td>
+                    </tr>
+                    <tr>
+                        <td>table</td>
+                        <td>表格</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="inline-block">
+                <h3>行内块元素——display：inline-block</h3>
+                <p>1.默认特点：元素排在一行，会有空白缝隙 |可以设置width,height，margin,padding等属性 |默认宽度由随内容变化
+                </p>
+                <p>2.常见的行内块级元素包括：</p>
+                <table border="1" width="400" height="300" cellspacing="0" class="table_init">
+                    <tr>
+                        <th>元素名称</th>
+                        <th>说明</th>
+                    </tr>
+                    <tr>
+                        <td>button</td>
+                        <td>按钮</td>
+                    </tr>
+                    <tr>
+                        <td>input</td>
+                        <td>输入框</td>
+                    </tr>
+                    <tr>
+                        <td>img</td>
+                        <td>图片</td>
+                    </tr>
+                    <tr>
+                        <td>iframe</td>
+                        <td>框架</td>
+                    </tr>
+                    <tr>
+                        <td>textarea</td>
+                        <td>多行文本框</td>
+                    </tr>
+                    <tr>
+                        <td>select</td>
+                        <td>选项</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h3>标准流居中布局</h3>
+        <div class="text1 TextBottom_init">
+            <span class="t1">行内元素水平居中对齐</span>
+        </div>
+        <div class="text2 TextBottom_init">
+            <div class="t2">块级元素水平居中对齐</div>
+        </div>
+        <div class="text3 TextBottom_init">
+            <div class="t3 border_init">
+                <p>多个</p>
+                <p>块元素</p>
+                <p>水平</p>
+                <p>居中</p>
+            </div>
+        </div>
+        <hr>
+        <h3>flex部分</h3>
+        <div class="box1 border_init">
+            <p class="border_init">我是</p>
+            <p class="border_init"> felx布局</p>
+        </div>
+        <h3>已知高度宽度元素的水平垂直居中 </h3>
+
+        <h4>绝对定位部分:绝对定位与负边距实现</h4>
+        <div class="box2 border_init TextBottom_init">
+            <p>利用绝对定位，将元素的top和left属性都设为50%，</p>
+            <p>再利用margin边距，将元素回拉它本身高宽的一半，</p>
+            <p>实现垂直居中。</p>
+            <pre>
+                将元素的top和left属性都设为50%，
+                再利用margin边距，将元素回拉它本身高宽的一半，
+                实现垂直居中。
+            </pre>
+            <div class="t5 border_init"> 法一：绝对定位</div>
+        </div>
+        <div class="box3 border_init TextBottom_init">
+            <pre>
+                利用子绝父相与margin值
+                margin:auto;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+            </pre>
+
+            <div class="t6 border_init"> 法二：绝对定位 </div>
+        </div>
+        <h3>未知高度和宽度元素的水平垂直居中 </h3>
+        <h4>法一. 当要被居中的元素是inline或者inline-block元素</h4>
+        <pre>
+            在父元素添加
+            display: table-cell;
+            text-align: center;
+             vertical-align: middle;
+        </pre>
+        <!-- 1. 不要与float：left; position:absolute; 一起使用
+2. 可以实现大小不固定元素的垂直居中
+3. margin设置无效，响应padding设置
+4. 对高度和宽度高度敏感
+5. 不要对display：table-cell使用百分比设置宽度和高度 -->
+        <div class="box4 border_init TextBottom_init">
+
+            <span class="border_init">你好</span>
+        </div>
+        <h4>法二. Css3 transform显威力</h4>
+        <b>看注释</b>
+        <!-- translate()函数是css3的新特性.在不知道自身宽高的情况下，可以利用它来进行水平垂直居中.。
+当使用：top: 50%;left: 50%;， 是以左上角为原点，故不处于中心位置
+translate(-50%,-50%) 作用是，往上（x轴）,左（y轴）移动自身长宽的 50%，以使其居于中心位置。 
+与负margin-left和margin-top实现居中不同的是，margin-left必须知道自身的宽高，
+而translate可以在不知道宽高的情况下进行居中，tranlate（）函数中的百分比是相对于自身宽高的百分比，所以能进行居中-->
+        <div class="box5 border_init TextBottom_init">
+            <span>transform</span>
+        </div>
+        <h4>法三. flex布局轻松解决</h4>
+        <div class="box6 border_init TextBottom_init">
+            <img src="D:\案例\Html\img\1.jpg" alt="" srcset="">
+        </div>
+</body>
+
+</html>
